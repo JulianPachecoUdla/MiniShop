@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="MiniShop, tu tienda online de tecnología.">
+
+    <title>MiniShop | Tecnología</title>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Archivos JavaScript -->
+    <script src="productos.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =====================================
+         ENCABEZADO
+    ====================================== -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="#" class="logo">
+                Mini<span>Shop</span>
+            </a>
+
+            <a href="#carrito" class="cart-link">
+                🛒 Mi carrito
+                <span id="contador-productos">0</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================
+         CONTENIDO PRINCIPAL
+    ====================================== -->
+
+    <main class="container">
+
+        <!-- PRESENTACIÓN -->
+
+        <section class="hero">
+
+            <span class="hero-label">TECNOLOGÍA PARA TODOS</span>
+
+            <h1>Encuentra tu próxima tecnología.</h1>
+
+            <p>
+                Explora nuestro catálogo de productos tecnológicos
+                y agrega tus favoritos al carrito.
+            </p>
+
+            <a href="#catalogo" class="hero-button">
+                Explorar catálogo
+            </a>
+
+        </section>
+
+
+        <!-- =====================================
+             CATÁLOGO
+        ====================================== -->
+
+        <section id="catalogo" class="catalog-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">NUESTROS PRODUCTOS</span>
+                    <h2>Catálogo de tecnología</h2>
+                    <p>Selecciona los productos que deseas comprar.</p>
+                </div>
+
+                <span class="product-count" id="cantidad-catalogo">
+                    0 productos
+                </span>
+
+            </div>
+
+            <!-- Productos generados por JavaScript -->
+
+            <div id="catalogo-productos" class="product-grid">
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CARRITO DE COMPRAS
+        ====================================== -->
+
+        <section id="carrito" class="cart-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">TU SELECCIÓN</span>
+                    <h2>Carrito de compras</h2>
+                    <p>Revisa los productos que has seleccionado.</p>
+                </div>
+
+                <button
+                    type="button"
+                    id="btn-vaciar"
+                    class="btn-clear"
+                    hidden
+                >
+                    Vaciar carrito
+                </button>
+
+            </div>
+
+
+            <!-- Lista de productos del carrito -->
+
+            <div id="lista-carrito" class="cart-list">
+
+            </div>
+
+
+            <!-- RESUMEN DE COMPRA -->
+
+            <div class="cart-summary">
+
+                <div class="summary-information">
+
+                    <h3>Resumen de compra</h3>
+
+                    <p>
+                        Total de productos:
+                        <strong id="total-unidades">0</strong>
+                    </p>
+
+                </div>
+
+                <div class="summary-total">
+
+                    <span>Total a pagar</span>
+
+                    <strong id="total-compra">$0.00</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         NOTIFICACIONES
+    ====================================== -->
+
+    <div id="notificacion" class="notification" role="status" aria-live="polite"></div>
+
+
+    <!-- =====================================
+         PIE DE PÁGINA
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>© 2026 MiniShop. Todos los derechos reservados.</p>
+
+            <p>Tu tienda online de tecnología.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
